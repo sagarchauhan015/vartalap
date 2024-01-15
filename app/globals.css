@@ -6,7 +6,14 @@ html,
 body,
 :root{
   height: 100%;
+  --orange: #FF7722;
+  --orange10: #FF873C;
+  --orange20: #FF9655;
+  --orange30: #FFA66F;
+  --orange-10: #FF6708;
+  --orange-20: #EE5C00;
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
