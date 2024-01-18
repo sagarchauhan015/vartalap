@@ -2,6 +2,7 @@ import React from 'react'
 import initialProfile from '@/lib/initial-profile'
 import { db } from '@/lib/databaseUtils';
 import { redirect } from 'next/navigation';
+import InitailModal from '@/components/modals/initial-modal';
 
 export default async function SetupPage() {
     const profile =  await initialProfile();
@@ -19,7 +20,10 @@ export default async function SetupPage() {
     }
   return (
     <>
-        <div>Create a server</div>
+       <div>
+       <InitailModal />
+       {/* Create a server */}
+       </div>
     </>
   )
 }
